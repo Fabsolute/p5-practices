@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: rgb(250, 250, 250);
+        }
+    </style>
+    <script src="../p5.js"></script>
+    <script src="visitor.js"></script>
+    <script src="square.js"></script>
+    <script src="sketch.js"></script>
+</head>
+<!--<button>start recording</button>-->
+<body>
+<main>
+</main>
+</body>
+<!--<script>-->
+<!--    const btn = document.querySelector('button'),-->
+<!--        chunks = [];-->
+
+<!--    function record() {-->
+<!--        start();-->
+<!--        chunks.length = 0;-->
+<!--        let stream = document.querySelector('canvas').captureStream(30),-->
+<!--            recorder = new MediaRecorder(stream);-->
+<!--        recorder.ondataavailable = e => {-->
+<!--            if (e.data.size) {-->
+<!--                chunks.push(e.data);-->
+<!--            }-->
+<!--        };-->
+<!--        recorder.onstop = exportVideo;-->
+<!--        btn.onclick = e => {-->
+<!--            recorder.stop();-->
+<!--            btn.textContent = 'start recording';-->
+<!--            btn.onclick = record;-->
+<!--        };-->
+<!--        recorder.start();-->
+<!--        btn.textContent = 'stop recording';-->
+<!--    }-->
+
+<!--    function exportVideo(e) {-->
+<!--        var blob = new Blob(chunks);-->
+<!--        var vid = document.createElement('video');-->
+<!--        vid.id = 'recorded'-->
+<!--        vid.controls = true;-->
+<!--        vid.src = URL.createObjectURL(blob);-->
+<!--        document.body.appendChild(vid);-->
+<!--        vid.play();-->
+<!--    }-->
+<!--    btn.onclick = record;-->
+<!--</script>-->
+
+</html>
